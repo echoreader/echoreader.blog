@@ -3,13 +3,15 @@ const site = require('./src/_data/site.js');
 module.exports = function(eleventyConfig) {
 
 eleventyConfig.addFilter('toAbsoluteUrl', function (url) {
-    try {
-      return new URL(url, site.baseUrl).href;
-    } catch (err) {
-      console.error(err);
-      return url;
-    }
-  });
+  const base = site?.baseUrl || site?.url || "https://echoreader.blog";
+  try {
+    return new URL(url, base).href;
+  } catch (err) {
+    console.error("toAbsoluteUrl error:", err);
+    return url;
+  }
+});
+
 
   eleventyConfig.addPassthroughCopy("src/assets");
 

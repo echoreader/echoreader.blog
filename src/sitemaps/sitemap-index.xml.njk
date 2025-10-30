@@ -5,9 +5,9 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>{{ site.url }}/sitemap-post.xml</loc>
+    <loc>{{ "/sitemap-post.xml" | toAbsoluteUrl }}</loc>
   </sitemap>
   <sitemap>
-    <loc>{{ site.url }}/sitemap-page.xml</loc>
+    <loc>{{ "/sitemap-page.xml" | toAbsoluteUrl }}</loc>
   </sitemap>
 </sitemapindex>

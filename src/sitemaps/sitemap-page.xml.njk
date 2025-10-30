@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
   {% for page in collections.all %}
     {% if page.inputPath | contains("/src/") and not page.inputPath | contains("/posts/") %}
       <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>{{ page.url | toAbsoluteUrl }}</loc>
         <lastmod>{{ page.date | date('yyyy-MM-dd') }}</lastmod>
       </url>
     {% endif %}
