@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://echoreader.blog/sitemap-index.xml
