@@ -21,6 +21,11 @@ body {
   padding: 0 1rem;
 }
 
+.container nav a{
+  color: #fff;
+
+}
+
 /* Wrapper untuk main */
 .main-wrapper {
   background: #fff;

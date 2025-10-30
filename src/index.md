@@ -5,6 +5,6 @@ layout: layout.njk
 permalink: "/"
 ---
 
-# Echo Reader: Modular SEO Insights
+# Echo Reader Modular SEO Insights
 
 Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategies, technical audits, and creative experiments. Built for clarity, optimized for search.
