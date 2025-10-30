@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <!--title>{{ title }}</title-->
-
+<meta name="robots" content="index, follow">
   <title>{{ title or this.ctx.title or "EchoReader – Blog Modular SEO" }}</title>
   <meta name="description" content="{{ description or excerpt or this.ctx.excerpt or 'EchoReader adalah blog modular yang membahas strategi SEO, audit teknis, dan arsitektur statis.' }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/style.css" />
 
+<script> if (window.location.search.includes("no-track")) { localStorage.setItem("skipAnalytics", "true"); } if (localStorage.getItem("skipAnalytics") !== "true") { const cfScript = document.createElement("script"); cfScript.defer = true; cfScript.src = "https://static.cloudflareinsights.com/beacon.min.js"; cfScript.setAttribute("data-cf-beacon", '{"token": "6923e7a9ca0b46b2b6f57fabffaf6e1b"}'); document.head.appendChild(cfScript); } </script>
 
 
 {% if page.url == "/" %}
