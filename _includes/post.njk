@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+---
+
+{% block content %}
+<article class="post-content container">
+  <!-- Akses lewat global this context -->
+  <h1>{{ this.ctx.title or title }}</h1>
+<time>{{ date | readableDate("cccc, dd MMMM yyyy") }}
+</time>
+
+  {{ content | safe }}
+</article>
+{% endblock %}

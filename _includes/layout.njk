@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <!--title>{{ title }}</title-->
+
+  <title>{{ title or this.ctx.title or "EchoReader – Blog Modular SEO" }}</title>
+  <meta name="description" content="{{ description or excerpt or this.ctx.excerpt or 'EchoReader adalah blog modular yang membahas strategi SEO, audit teknis, dan arsitektur statis.' }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+
+
+{% if page.url == "/" %}
+  {% include "schemas/organization.njk" %}
+{% endif %}
+
+{% if page.url == "/blog/" %}
+  {% include "schemas/blog.njk" %}
+{% endif %}
+
+
+{% if page.inputPath | contains("/posts/") %}
+  {% include "schemas/post.njk" %}
+{% endif %}
+
+
+{% if page.url == "/about/" %}
+  {% include "schemas/profile.njk" %}
+{% endif %}
+
+</head>
+<body>
+  {% include "header.njk" %}
+
+  <main class="main-wrapper container">
+    <div class="page-content">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  {% include "footer.njk" %}
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mainMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
