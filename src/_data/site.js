@@ -1,10 +1,4 @@
-const url =
-  process.env.ELEVENTY_ENV === "production"
-    ? "https://echoreader.blog"
-    : "http://localhost:8080";
-
-console.log("site.url:", process.env.ELEVENTY_ENV, "→", url);
-
+const isDev = process.env.ELEVENTY_ENV === 'development';
 module.exports = {
-  url
+  baseUrl: isDev ? 'http://localhost:8080' : 'https://echoreader.blog'
 };

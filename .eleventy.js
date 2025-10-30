@@ -1,4 +1,16 @@
+const site = require('./src/_data/site.js');
+
 module.exports = function(eleventyConfig) {
+
+eleventyConfig.addFilter('toAbsoluteUrl', function (url) {
+    try {
+      return new URL(url, site.baseUrl).href;
+    } catch (err) {
+      console.error(err);
+      return url;
+    }
+  });
+
   eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addCollection("posts", function(collectionApi) {

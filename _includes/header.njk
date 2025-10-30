@@ -1,15 +1,15 @@
 <header>
   <div class="header-inner container">
     <div class="branding">
-      <a href="{{ site.url }}/">Echo Reader</a>
+      <a href="{{ '/' | toAbsoluteUrl }}">Echo Reader</a>
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
     <nav class="main-menu" id="mainMenu">
       <ul>
-        <li><a href="{{ site.url }}/blog/">Blog</a></li>
-        <li><a href="{{ site.url }}/about/">About</a></li>
+        <li><a href="{{ '/blog/' | toAbsoluteUrl }}">Blog</a></li>
+        <li><a href="{{ '/about/' | toAbsoluteUrl }}">About</a></li>
       </ul>
     </nav>
   </div>

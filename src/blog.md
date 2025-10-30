@@ -9,7 +9,7 @@ permalink: "/blog/"
 
 {% for post in collections.posts | reverse %}
   <div class="post-preview">
-    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <h2><a href="{{ post.url | toAbsoluteUrl }}">{{ post.data.title }}</a></h2>
     <small>{{ post.date | date }}</small>
 
     <p>{{ post.data.excerpt }}</p>
