@@ -1,4 +1,9 @@
 User-agent: *
+Disallow: /assets/
+Disallow: /includes/
+Disallow: /partials/
+Disallow: /404.html
 Allow: /
 
 Sitemap: https://echoreader.blog/sitemap-index.xml
+Host: https://echoreader.blog
