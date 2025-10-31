@@ -4,15 +4,17 @@
   "description": "Static blog for echoreader.blog built with Eleventy",
   "author": "Echo Reader",
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "eleventy",
-    "build:prod": "ELEVENTY_ENV=production eleventy",
+    "clean": "node clean.js",
+    "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:prod": "cross-env ELEVENTY_ENV=production eleventy",
     "watch": "eleventy --watch",
-    "start": "npm run dev",
-    "clean": "rm -rf _site"
+    "start": "npm run dev"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "cross-env": "^10.1.0",
+    "rimraf": "^6.1.0"
   },
   "license": "MIT",
   "repository": {
