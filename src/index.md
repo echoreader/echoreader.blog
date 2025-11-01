@@ -12,8 +12,31 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 <noscript>
   <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
 </noscript>
+
 <script>
   if (location.hostname === "echoreader.pages.dev") {
-    document.body.innerHTML = '<p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>';
+    document.body.innerHTML = `
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          font-family: sans-serif;
+          background-color: #fff;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        a {
+          color: #0077cc;
+          text-decoration: none;
+        }
+      </style>
+      <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
+    `;
+    document.querySelector("footer")?.remove();
   }
 </script>
