@@ -9,10 +9,29 @@ permalink: "/"
 
 Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategies, technical audits, and creative experiments. Built for clarity, optimized for search.
 
-{% if site.hostname == "echoreader.pages.dev" %}
-  <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
-{% else %}
-  <h1>Echo Reader Modular SEO Insights</h1>
-  <p>Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategies, technical audits, and creative experiments.</p>
-{% endif %}
+<script>
+  if (location.hostname === "echoreader.pages.dev") {
+    const footer = document.querySelector("footer");
+    if (footer) {
+      const container = footer.querySelector(".container");
 
+      // Ganti isi <p>
+      const p = container.querySelector("p");
+      if (p) {
+        p.textContent = "echoreader.blog";
+      }
+
+      // Hapus <nav>
+      const nav = container.querySelector("nav");
+      if (nav) {
+        nav.remove();
+      }
+    }
+
+    // Opsional: Kosongkan konten utama
+    const main = document.querySelector("main");
+    if (main) {
+      main.innerHTML = "";
+    }
+  }
+</script>
