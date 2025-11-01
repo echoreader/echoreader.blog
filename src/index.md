@@ -15,35 +15,20 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 
 <script>
   if (location.hostname === "echoreader.pages.dev") {
-    // Inject layout kosong + link
-    document.body.innerHTML = `
-      <style>
-        body {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          font-family: sans-serif;
-          background-color: #fff;
-        }
-        p {
-          font-size: 1.2rem;
-        }
-        a {
-          color: #0077cc;
-          text-decoration: none;
-        }
-      </style>
-      <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
-    `;
-
-    // Hapus footer secara terpisah
-    var footer = document.querySelector("footer");
-    if (footer) {
-      footer.remove();
+    // Hapus semua isi body
+    while (document.body.firstChild) {
+      document.body.removeChild(document.body.firstChild);
     }
+
+    // Tambahkan link kosong
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+    a.href = "https://echoreader.blog";
+    a.textContent = "https://echoreader.blog";
+    p.textContent = "This site has moved to ";
+    p.appendChild(a);
+    document.body.appendChild(p);
   }
 </script>
+
 
