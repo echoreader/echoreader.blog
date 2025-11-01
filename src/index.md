@@ -8,3 +8,12 @@ permalink: "/"
 # Echo Reader Modular SEO Insights
 
 Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategies, technical audits, and creative experiments. Built for clarity, optimized for search.
+
+<noscript>
+  <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
+</noscript>
+<script>
+  if (location.hostname === "echoreader.pages.dev") {
+    document.body.innerHTML = '<p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>';
+  }
+</script>
