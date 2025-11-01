@@ -59,7 +59,10 @@
     </div>
   </main>
 
-  {% include "footer.njk" %}
+  {% if site.hostname != "echoreader.pages.dev" %}
+    {% include "footer.njk" %}
+  {% endif %}
+
 
   <script>
     function toggleMenu() {
