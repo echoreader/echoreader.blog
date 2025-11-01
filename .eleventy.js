@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/sitemaps": "/" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/ads.txt");
 
   // 🔧 Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {

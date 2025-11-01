@@ -9,7 +9,7 @@ excerpt: Ever find yourself staring into the fridge, just you and your partner, 
 Easy Vegetarian Dinners for 2
 =============================
 
-Ever find yourself staring into the fridge, just you and your partner, wondering what on earth to make that’s fast, satisfying, and doesn’t leave you with a mountain of leftovers? Yeah, me too. Cooking for two is a whole different ball game. I used to default to ordering takeout, convinced that cooking a “real” [vegetarian](https://echoreader.blog) meal for just us two was too much hassle. But honestly? I was so wrong.
+Ever find yourself staring into the fridge, just you and your partner, wondering what on earth to make that’s fast, satisfying, and doesn’t leave you with a mountain of leftovers? Yeah, me too. Cooking for two is a whole different ball game. I used to default to ordering takeout, convinced that cooking a “real” vegetarian meal for just us two was too much hassle. But honestly? I was so wrong.
 
 The secret is all about smart, simple recipes that feel special without the stress. This isn’t about complicated chef techniques or a pantry stocked with every spice known to humankind. It’s about getting a delicious, wholesome dinner on the table that makes you both happy. Let’s dive in.
 

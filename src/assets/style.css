@@ -92,6 +92,52 @@ header {
   color: #fff;
 }
 
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.post-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-card a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+.post-card small {
+  display: block;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.post-card p {
+  margin-bottom: 0;
+  color: #333;
+}
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .main-menu ul {
@@ -121,6 +167,10 @@ header {
 
   .hamburger {
     display: block;
+  }
+
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

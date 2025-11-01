@@ -7,12 +7,16 @@ permalink: "/blog/"
 
 # All Posts
 
-{% for post in collections.posts | reverse %}
-  <div class="post-preview">
-    <h2><a href="{{ post.url | toAbsoluteUrl }}">{{ post.data.title }}</a></h2>
-    <small>{{ post.date | date }}</small>
+<div class="post-grid">
+  {% for post in collections.posts | reverse %}
+    <div class="post-card">
+      <h2>
+        <a href="{{ post.url | toAbsoluteUrl }}">{{ post.data.title }}</a>
+      </h2>
+      <small>{{ post.date | date }}</small>
+      <p>{{ post.data.excerpt }}</p>
+    </div>
+  {% endfor %}
+</div>
 
-    <p>{{ post.data.excerpt }}</p>
-  </div>
-{% endfor %}
 
