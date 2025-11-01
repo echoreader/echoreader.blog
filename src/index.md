@@ -15,6 +15,7 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 
 <script>
   if (location.hostname === "echoreader.pages.dev") {
+    // Inject layout kosong + link
     document.body.innerHTML = `
       <style>
         body {
@@ -37,6 +38,12 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
       </style>
       <p>This site has moved to <a href="https://echoreader.blog">https://echoreader.blog</a></p>
     `;
-    document.querySelector("footer")?.remove();
+
+    // Hapus footer secara terpisah
+    var footer = document.querySelector("footer");
+    if (footer) {
+      footer.remove();
+    }
   }
 </script>
+
