@@ -1,35 +1,45 @@
 module.exports = function(eleventyConfig) {
   // 🔧 Absolute URL filter (no external dependency)
-  const isProd = process.env.ELEVENTY_ENV === 'production';
-  const baseUrl = isProd ? 'https://echoreader.blog' : 'http://localhost:8080';
+  //const isProd = process.env.ELEVENTY_ENV === 'production';
+  //const baseUrl = isProd ? 'https://echoreader.blog' : 'http://localhost:8080';
+
+  const site = require("./src/_data/site.js");
 
   eleventyConfig.addFilter('toAbsoluteUrl', function(url) {
     try {
+      return new URL(url, site.url).href; 
       //return new URL(url, baseUrl).href; 
-      return new URL(url, 'https://echoreader.blog').href;
+      //return new URL(url, 'https://echoreader.blog').href;
     } catch (err) {
       console.error("toAbsoluteUrl error:", err);
       return url;
     }
   });
 
-  eleventyConfig.addFilter('myText', function() {
-    return "🔥 Echo Reader is live and modular!";
-  });
+  eleventyConfig.addShortcode("link", function (path, text, target = "_self", rel = "") {
+  try {
+    const href = new URL(path, site.url).href;
+    let attrs = [`href="${href}"`, `target="${target}"`];
+    if (rel) attrs.push(`rel="${rel}"`);
+    return `<a ${attrs.join(" ")}>${text}</a>`;
+  } catch (err) {
+    console.error("link shortcode error:", err);
+    return text;
+  }
+});
 
   // 🔧 Passthrough
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/sitemaps": "/" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/ads.txt");
+  eleventyConfig.addPassthroughCopy({"src/favicon.ico": "favicon.ico" });
 
   // 🔧 Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/posts/*.md");
-  });
-
-  eleventyConfig.addCollection("post", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/posts/*.md");
+    return collectionApi.getFilteredByGlob("src/posts/*.md")
+    .filter(post => post.date) // pastikan ada date
+    .sort((a, b) => b.date - a.date); // descending
   });
 
   // 🔧 Filters
@@ -60,7 +70,7 @@ module.exports = function(eleventyConfig) {
       data: "../_data"
     },
     templateFormats: ["md", "njk", "html"],
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk"
   };

@@ -8,7 +8,7 @@ permalink: "/blog/"
 # All Posts
 
 <div class="post-grid">
-  {% for post in collections.posts | reverse %}
+  {% for post in collections.posts %}
     <div class="post-card">
       <h2>
         <a href="{{ post.url | toAbsoluteUrl }}">{{ post.data.title }}</a>
@@ -18,5 +18,6 @@ permalink: "/blog/"
     </div>
   {% endfor %}
 </div>
+
 
 

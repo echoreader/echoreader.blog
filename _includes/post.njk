@@ -5,18 +5,21 @@ layout: layout.njk
 {% block content %}
 <article class="post-content container">
   <!-- Akses lewat global this context -->
-  <h1>
-  <a
-    href="{{ page.url | toAbsoluteUrl }}"
-    aria-label="Permalink to: {{ this.ctx.title or title }}"
-    class="text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400"
-  >
-    {{ this.ctx.title or title }}
-  </a>
-</h1>
 
-<time>{{ date | readableDate("cccc, dd MMMM yyyy") }}
-</time>
+  <h1>
+    <a
+      href="{{ page.url | toAbsoluteUrl }}"
+      aria-label="Permalink to: {{ this.ctx.title or title }}"
+      class="text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400"
+    >
+      {{ this.ctx.title or title }}
+    </a>
+  </h1>
+
+  <time>{{ date | readableDate("cccc, dd MMMM yyyy") }}
+  </time>
+
+  <p />
 
   {{ content | safe }}
 </article>
