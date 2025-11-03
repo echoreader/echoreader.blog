@@ -1,5 +1,3 @@
 module.exports = {
-  url: process.env.ELEVENTY_ENV === "production"
-    ? "https://echoreader.blog"
-    : "http://localhost:8080"
+  url: process.env.URL || process.env.SITE_URL || "https://echoreader.blog"
 };
