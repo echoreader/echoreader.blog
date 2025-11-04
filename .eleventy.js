@@ -57,6 +57,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat(formatStr);
   });
 
+  eleventyConfig.addFilter("rfc3339", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
+  });
+
   eleventyConfig.addFilter("contains", (str, substr) => {
     return str && str.includes(substr);
   });
