@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
   {% for post in sortedPosts %}
     <url>
       <loc>{{ post.url | toAbsoluteUrl }}</loc>
-      <lastmod>{{ page.date | rfc3339 }}</lastmod>
+      <lastmod>{{ post.date | rfc3339 }}</lastmod>
     </url>
   {% endfor %}
 </urlset>
