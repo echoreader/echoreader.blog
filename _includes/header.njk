@@ -1,3 +1,37 @@
+<header class="w-full bg-black text-white shadow-md fixed top-0 left-0 z-50">
+  <div class="max-w-4xl mx-auto flex items-center justify-between px-4 py-3">
+    <!-- Brand -->
+    <a href="{{ '/' | toAbsoluteUrl }}" class="text-xl font-bold text-white no-underline">Echoreader</a>
+
+    <!-- Hamburger -->
+    <button id="menu-toggle" class="lg:hidden flex flex-col gap-1 p-2 text-white" aria-label="Open menu">
+      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
+    </button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex gap-6 items-center">
+      <a href="{{ '/blog/' | toAbsoluteUrl }}" class="text-white no-underline hover:text-gray-300">Blog</a>
+      <a href="{{ '/about/' | toAbsoluteUrl }}" class="text-white no-underline hover:text-gray-300">About</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-black text-white">
+    <div class="max-w-6xl mx-auto flex flex-col px-4 py-2">
+      <a href="{{ '/blog/' | toAbsoluteUrl }}" class="py-2 text-white no-underline hover:text-gray-300">Blog</a>
+      <a href="{{ '/about/' | toAbsoluteUrl }}" class="py-2 text-white no-underline hover:text-gray-300">About</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menu-toggle').onclick = () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  };
+</script>
+
+{# Ini komentar di Nunjucks
 <header>
   <div class="header-inner container">
     <div class="branding">
@@ -14,3 +48,4 @@
     </nav>
   </div>
 </header>
+#}

@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
     <url>
       <loc>{{ post.url | toAbsoluteUrl }}</loc>
       <lastmod>{{ post.date | rfc3339 }}</lastmod>
+      <priority>0.8</priority>
     </url>
   {% endfor %}
 </urlset>

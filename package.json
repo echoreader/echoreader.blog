@@ -9,12 +9,14 @@
     "build": "cross-env ELEVENTY_ENV=production eleventy",
     "build:prod": "cross-env ELEVENTY_ENV=production eleventy",
     "watch": "eleventy --watch",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "uno": "unocss . --out-file src/assets/uno.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "cross-env": "^10.1.0",
-    "rimraf": "^6.1.0"
+    "rimraf": "^6.1.0",
+    "unocss": "^66.5.5"
   },
   "license": "MIT",
   "repository": {
