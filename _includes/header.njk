@@ -26,9 +26,58 @@
 </header>
 
 <script>
-  document.getElementById('menu-toggle').onclick = () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  };
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");        // tombol hamburger
+    const mobileMenu = document.getElementById("mobile-menu");    // container menu mobile
+    const desktopNav = document.querySelector("nav.hidden.lg\\:flex"); // target nav desktop spesifik
+
+    const mq = window.matchMedia("(max-width: 1023px)"); // Tailwind lg breakpoint
+    let isBound = false; // flag untuk mencegah double binding
+
+    function bindMobileToggle() {
+      if (!toggle || !mobileMenu || isBound) return;
+      // Pastikan menu mobile mulai dalam keadaan hidden (menghindari bentrok)
+      mobileMenu.classList.add("hidden");
+
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      isBound = true;
+    }
+
+    function unbindMobileToggle() {
+      if (!toggle || !isBound) return;
+      // Reset listener dengan clone agar bersih
+      const clone = toggle.cloneNode(true);
+      toggle.parentNode.replaceChild(clone, toggle);
+      // Update referensi toggle ke clone baru
+      const newToggle = document.getElementById("menu-toggle");
+      // Set flag ulang
+      isBound = false;
+    }
+
+    function handleViewport(e) {
+      if (e.matches) {
+        // MOBILE: aktifkan toggle; hapus link di desktop nav
+        bindMobileToggle();
+        if (desktopNav) {
+          desktopNav.querySelectorAll("a").forEach(link => link.remove());
+        }
+      } else {
+        // DESKTOP: matikan toggle; pastikan mobile menu tertutup; hapus link di mobile nav
+        unbindMobileToggle();
+        if (mobileMenu) {
+          mobileMenu.classList.add("hidden");            // tutup menu mobile kalau sempat terbuka
+          mobileMenu.querySelectorAll("a").forEach(link => link.remove());
+        }
+      }
+    }
+
+    // Run saat load dan saat resize
+    handleViewport(mq);
+    mq.addEventListener("change", handleViewport);
+  });
 </script>
 
 {# Ini komentar di Nunjucks
