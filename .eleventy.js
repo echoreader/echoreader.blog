@@ -1,15 +1,20 @@
 module.exports = function(eleventyConfig) {
   const site = require("./src/_data/site.js");
 
-  eleventyConfig.addFilter('toAbsoluteUrl', function(url) {
-    try {
-      return new URL(url, "https://echoreader.blog").href;
-      //return new URL(url, site.url).href;
-    } catch (err) {
-      console.error("toAbsoluteUrl error:", err);
-      return url;
-    }
+  //eleventyConfig.addFilter('toAbsoluteUrl', function(url) {
+  //  try {
+  //    return new URL(url, site.url).href;
+  //  } catch (err) {
+  //    console.error("toAbsoluteUrl error:", err);
+  //    return url;
+  //  }
+  //});
+
+  eleventyConfig.addFilter("toAbsoluteUrl", function(url) {
+    const safeUrl = url.startsWith("/") ? url : "/" + url;
+    return "https://echoreader.blog" + safeUrl;
   });
+
 
   eleventyConfig.addShortcode("link", function (path, text, target = "_self", rel = "") {
     try {
