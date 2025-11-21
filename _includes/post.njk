@@ -3,24 +3,69 @@ layout: layout.njk
 ---
 
 {% block content %}
-<article class="post-content container">
-  <!-- Akses lewat global this context -->
 
+<!-- 🔧 Breadcrumb -->
+<nav class="breadcrumb text-sm mb-4">
+  <a href="{{ '/' | toAbsoluteUrl }}" class="text-blue-600 hover:underline-none">Home</a>
+  › <span class="text-gray-600">{{ category }}</span>
+  › <span class="text-gray-900">{{ title }}</span>
+</nav>
+
+<article class="post-content container">
+  <!-- Judul -->
   <h1>
     <a
       href="{{ page.url | toAbsoluteUrl }}"
-      aria-label="Permalink to: {{ this.ctx.title or title }}"
+      aria-label="Permalink to: {{ title }}"
       class="text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400"
     >
-      {{ this.ctx.title or title }}
+      {{ title }}
     </a>
   </h1>
 
-  <time>{{ date | readableDate("cccc, dd MMMM yyyy") }}
-  </time>
+  <!-- Tanggal & Author -->
+  <p class="text-gray-500 text-sm">
+    <time datetime="{{ date | rfc3339 }}">{{ date | readableDate("cccc, dd MMMM yyyy") }}</time>
+    · by <span class="font-semibold">{{ author }}</span>
+  </p>
 
-  <p />
-
-  {{ content | safe }}
+  <!-- Konten -->
+  <div class="mt-6 prose">
+    {{ content | safe }}
+  </div>
 </article>
+
+<!-- 🔧 Tags -->
+{% if tags %}
+<div class="tags mt-8">
+  <h3 class="text-sm font-semibold">Tags:</h3>
+  <ul class="flex flex-wrap gap-2 mt-2">
+    {% for tag in tags %}
+      <li class="bg-gray-200 px-2 py-1 rounded text-sm">{{ tag }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<!-- 🔧 Navigasi Prev/Next -->
+<div class="post-navigation mt-10 flex justify-between items-center text-sm">
+  {% if prev %}
+    <div class="flex items-center gap-1">
+      <span class="text-gray-600">&lt;</span>
+      <a href="{{ prev.url | toAbsoluteUrl }}" class="text-blue-600 hover:underline">{{ prev.data.title }}</a>
+    </div>
+  {% else %}
+    <div></div>
+  {% endif %}
+
+  {% if next %}
+    <div class="flex items-center gap-1">
+      <a href="{{ next.url | toAbsoluteUrl }}" class="text-blue-600 hover:underline">{{ next.data.title }}</a>
+      <span class="text-gray-600">&gt;</span>
+    </div>
+  {% else %}
+    <div></div>
+  {% endif %}
+</div>
+
 {% endblock %}

@@ -4,6 +4,12 @@ date: 2025-10-23
 layout: post.njk
 permalink: "/basic-on-page-seo-checklist/"
 excerpt: Elevate your site's SEO game! Explore our basic on-page SEO checklist to ensure your content is optimized for search engines and user engagement.
+author: "Echo Reader"
+category: "seo"
+tags:
+  - checklist
+  - on-page
+  - optimization
 ---
 
 I stared at the Google Analytics dashboard, frustrated. My latest article, packed with research, was getting virtually no traffic. A more experienced colleague asked to see the page, and within 10 seconds, he pointed out the problem: "You didn't even write a title tag. Google has no idea what this is about." I was so focused on writing the "perfect" article that I had completely neglected the **SEO basics** that make it discoverable. That was the day I created my non-negotiable **basic on-page SEO checklist**. It's the same one I'll share with you now a simple, actionable guide to ensure your great content actually gets found.

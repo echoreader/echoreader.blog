@@ -4,6 +4,13 @@ date: 2025-10-24
 layout: post.njk
 permalink: "/car-insurance-quotes-comparison/"
 excerpt: Honestly? I used to be that person who just renewed my car insurance without thinking twice. You know, the one who got the renewal notice and thought
+author: "Echo Reader"
+category: "insurance"
+tags:
+  - car-insurance
+  - quotes
+  - comparison
+  - finance
 ---
 
 The Complete Guide to Car Insurance Quotes Comparison: What I Wish Someone Had Told Me Sooner
