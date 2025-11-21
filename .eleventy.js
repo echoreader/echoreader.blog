@@ -3,8 +3,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('toAbsoluteUrl', function(url) {
     try {
-      //Not Works
-      return new URL(url, site.url).href;
+      return new URL(url, "https://echoreader.blog").href;
+      //return new URL(url, site.url).href;
     } catch (err) {
       console.error("toAbsoluteUrl error:", err);
       return url;
