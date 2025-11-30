@@ -39,13 +39,10 @@ A question I get a lot: “But where do you get your protein?” It’s easier t
 
 **My Quick Checklist for Success:**
 
-*    Plan 2-3 dinners a week to avoid last-minute stress.
-    
-*    Choose recipes with overlapping ingredients to reduce waste.
-    
+*    Plan 2-3 dinners a week to avoid last-minute stress.   
+*    Choose recipes with overlapping ingredients to reduce waste. 
 *    Invest in a good set of smaller pans it makes a huge difference!
     
-
 10-Minute Vegetarian Dinners That Actually Taste Good
 -----------------------------------------------------
 
@@ -60,14 +57,10 @@ Pantry Staples That Make Vegetarian Cooking Easier
 
 My pantry is my secret weapon. With a few key items, I can always whip up a meal without running to the store. This is how you build **EEAT** Expertise and Trust by sharing practical, tried-and-true advice.
 
-*   **Canned Legumes:** Chickpeas, black beans, lentils. Rinse and they’re ready to go.
-    
-*   **Grains:** Quinoa (cooks in 15 minutes!), couscous, and instant brown rice.
-    
-*   **Flavor Boosters:** Canned coconut milk, tomato paste in a tube, good olive oil, soy sauce or tamari.
-    
-*   **Spices:** Smoked paprika, cumin, and red pepper flakes can transform anything.
-    
+*   **Canned Legumes:** Chickpeas, black beans, lentils. Rinse and they’re ready to go. 
+*   **Grains:** Quinoa (cooks in 15 minutes!), couscous, and instant brown rice.   
+*   **Flavor Boosters:** Canned coconut milk, tomato paste in a tube, good olive oil, soy sauce or tamari.   
+*   **Spices:** Smoked paprika, cumin, and red pepper flakes can transform anything.  
 
 **Smart Substitutions:** Out of fresh garlic? Garlic powder works. No lime? A dash of vinegar. Cooking should be flexible, not rigid.
 
@@ -83,12 +76,9 @@ Budget-Friendly Vegetarian Dinners That Don’t Feel Cheap
 
 Eating well on a budget is totally possible. The key is focusing on inexpensive but nutrient-dense staples.
 
-*   **Lentils:** Incredibly cheap and a great ground meat substitute in sauces like bolognese.
-    
-*   **Eggs:** A fantastic source of protein for a frittata or a quick shakshuka.
-    
-*   **Seasonal Vegetables:** They’re always cheaper and taste better.
-    
+*   **Lentils:** Incredibly cheap and a great ground meat substitute in sauces like bolognese. 
+*   **Eggs:** A fantastic source of protein for a frittata or a quick shakshuka. 
+*   **Seasonal Vegetables:** They’re always cheaper and taste better.  
 
 A big pot of vegetarian chili, loaded with beans and veggies, might cost $10 total and give you two dinners. Now that’s value.
 
@@ -105,13 +95,9 @@ High-Protein Vegetarian Meals Without Tofu
 Not a tofu fan? No problem! There are so many other ways to pack in protein.
 
 *   **Lentils:** 18 grams of protein per cooked cup.
-    
-*   **Chickpeas:** Perfect in curries, salads, and even burgers.
-    
-*   **Greek Yogurt:** Great for creamy sauces or as a topping.
-    
+*   **Chickpeas:** Perfect in curries, salads, and even burgers.  
+*   **Greek Yogurt:** Great for creamy sauces or as a topping.  
 *   **Edamame:** Fantastic tossed into stir-fries or eaten as a snack.
-    
 
 One of my favorite high-protein dinners is a **lentil and walnut “taco meat”** for tacos or nachos. It’s hearty, savory, and seriously satisfying.
 
@@ -123,14 +109,10 @@ These are my framework meals. Once you have the formula down, you can mix and ma
 **The Grain Bowl Formula:**
 
 1.  **Base:** Quinoa, brown rice, or couscous.
-    
-2.  **Protein:** Chickpeas, black beans, or a fried egg.
-    
-3.  **Veggies:** Whatever needs using up! Roasted or raw.
-    
+2.  **Protein:** Chickpeas, black beans, or a fried egg. 
+3.  **Veggies:** Whatever needs using up! Roasted or raw.  
 4.  **Sauce:** A simple tahini-lemon dressing or a spicy peanut sauce.
     
-
 It’s impossible to get bored when you can create a new bowl every time.
 
 How to Scale Vegetarian Recipes for Two Without Leftovers
@@ -148,3 +130,30 @@ So, what’s the biggest takeaway? Be kind to yourself. Some nights will be a ma
 Start with one or two new recipes a week. Build your pantry slowly. Most importantly, have fun with it. Cooking together can be a really connecting experience. I really think you should try the sheet pan meal first it’s a total confidence booster.
 
 You’ve got this.
+
+## FAQ
+
+<details>
+  <summary>Why are these vegetarian recipes specifically great for two people?</summary>
+  <p>These recipes are designed to minimize waste and simplify portion control. They use ingredients that are easy to measure for smaller batches and avoid extensive leftovers, solving the common problem of cooking for two without generating a week's worth of food.</p>
+</details>
+
+<details>
+  <summary>How fast are these "easy" vegetarian dinners to prepare?</summary>
+  <p>The majority of the recipes focus on minimal chopping and quick cooking times. Most dinners can be prepared and cooked in **30 minutes or less**, making them perfect for busy weeknights when you need a fast, satisfying meal.</p>
+</details>
+
+<details>
+  <summary>Where do these recipes source their protein?</summary>
+  <p>The recipes utilize diverse plant-based protein sources, including **lentils, chickpeas, black beans, tofu, eggs, nuts, and high-protein grains (like quinoa)**, ensuring the meals are filling and nutritionally complete without meat.</p>
+</details>
+
+<details>
+  <summary>Can these recipes be scaled up to serve a family?</summary>
+  <p>Yes, absolutely. Since the ingredient lists are simple, you can easily double or triple the quantities to serve four or six people. Just be mindful of increasing the cooking time slightly when using a larger pot or pan.</p>
+</details>
+
+<details>
+  <summary>Do these recipes require special or expensive vegetarian ingredients?</summary>
+  <p>No. We focus on common, budget-friendly pantry staples and fresh produce that can be found at any standard grocery store, avoiding specialized or expensive ingredients often found in complex vegan cooking.</p>
+</details>

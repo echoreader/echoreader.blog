@@ -104,14 +104,27 @@ Looking ahead, the integration of AI is the biggest trend I'm watching. While AI
 
 ## Frequently Asked Questions (FAQ)
 
-**Q: How long does it take to see results from SEO?**
-A: This is the most common question I get. For a new site, it typically takes 4-8 months to see meaningful traffic from a consistent **SEO step-by-step process**. For competitive niches, it can take a year or more. Patience and persistence are non-negotiable.
+<details>
+  <summary>What is the absolute first step in optimizing a brand new website for SEO?</summary>
+  <p>The first step is **Technical Setup and Indexing**. This involves creating and submitting a clean **XML Sitemap** to Google Search Console, ensuring your site is mobile-friendly, and verifying that the robots.txt file is not accidentally blocking search engines from crawling important pages.</p>
+</details>
 
-**Q: What is the single most important SEO factor?**
-A: There is no single "most important" factor, as Google uses hundreds. However, if I had to pick one concept, it's **user intent**. If your page doesn't satisfy what the user is looking for, no amount of technical optimization or link building will make it rank.
+<details>
+  <summary>What is the most common mistake beginners make when doing SEO?</summary>
+  <p>The most common mistake is focusing exclusively on **keyword density** and neglecting **user intent**. Beginners often write content stuffed with keywords but fail to fully answer the question or solve the problem the user searched for, which leads to high bounce rates and poor rankings.</p>
+</details>
 
-**Q: Is technical SEO or content more important?**
-A: They are interdependent. **Technical SEO** is like the engine of a car without it, you're going nowhere. **Content** is the fuel without it, the engine has nothing to run on. You need both.
+<details>
+  <summary>In the step-by-step process, when should I start building backlinks (Off-Page SEO)?</summary>
+  <p>You should start building backlinks (Off-Page SEO) **after** you have strong foundational On-Page SEO. This means your content must be high-quality and fully optimized first. Building links to poor or thin content is a waste of effort. Focus on **quality content first**, then promotion.</p>
+</details>
 
-**Q: How much should I budget for SEO?**
-A: If you're doing it yourself, your primary investment is time. For professional services, costs vary wildly. A small business might invest $750-$2,500/month for ongoing **SEO** services, while enterprise-level campaigns can run into six figures monthly. The key is to see it as a marketing investment with a demonstrable ROI.
+<details>
+  <summary>How long does it take to see results after applying basic SEO steps?</summary>
+  <p>For a brand new site in a competitive niche, meaningful results (traffic increases and better rankings) typically take anywhere from **6 to 12 months**. For established sites, you may see positive movement from optimization steps within 3 to 6 months. Patience and consistency are key.</p>
+</details>
+
+<details>
+  <summary>What is the easiest step I can take right now to improve my website's ranking?</summary>
+  <p>The easiest high-impact step is to optimize your existing **Title Tags** and **Meta Descriptions**. Ensure they accurately reflect the content, include your target keyword, and are compelling enough to increase your **Click-Through Rate (CTR)** from search results.</p>
+</details>

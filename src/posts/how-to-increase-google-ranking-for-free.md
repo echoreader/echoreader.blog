@@ -123,19 +123,29 @@ Your traffic is waiting. Go steal it (the ethical way).
 
 ## Frequently Asked Questions
 
-**How long does it take to see ranking improvements using only free methods?**  
-My average is 4–12 weeks for small wins, 3–9 months for major jumps. Consistency compounds.
+<details>
+  <summary>What is the single most effective free action to improve Google ranking?</summary>
+  <p>The most effective free action is **improving content quality and relevance**. This means fully answering the user's search query (their intent), providing unique value, and ensuring your content is comprehensive, which naturally reduces bounce rates and increases time on page.</p>
+</details>
 
-**Do I still need backlinks in 2025?**  
-Yes, but helpful content + technical excellence can carry you surprisingly far without tons of them.
+<details>
+  <summary>How important is website speed for free Google ranking improvement?</summary>
+  <p>Website speed is critical, as it is a known ranking factor and a core part of the **Core Web Vitals** initiative. Optimizing images, leveraging browser caching, and minimizing unnecessary code are all free steps that significantly improve load times and user experience.</p>
+</details>
 
-**Is ChatGPT content killing rankings now?**  
-Google is getting scary good at detecting it. I use AI for research and outlines only — every word people read is mine.
+<details>
+  <summary>Can I improve my ranking without spending money on link building?</summary>
+  <p>Yes. You can gain high-quality backlinks for free through **digital PR** (creating content so valuable that others link to it naturally), finding and claiming brand mentions (unlinked mentions of your site), and being active in industry communities to share your expertise.</p>
+</details>
 
-**Should I focus on new content or updating old posts?**  
-80% updating old posts, 20% new in 2025. Google loves fresh, comprehensive pages.
+<details>
+  <summary>What role does Google My Business play in free local SEO ranking?</summary>
+  <p>For local businesses, **Google My Business (GMB)** is the most crucial free tool. Fully optimizing your GMB profile (accurate name, address, phone, hours, and consistent posting) is essential for ranking highly in the local "Map Pack" and local search results.</p>
+</details>
 
-**What’s the fastest free win for most sites?**  
-Claim/fix Google Business Profile (if local) + fix Core Web Vitals issues. I’ve seen 50%+ traffic boosts in under 30 days.
+<details>
+  <summary>How can I use Google Search Console for free ranking improvement?</summary>
+  <p>Google Search Console is a powerful free tool. Use it to **identify and fix technical errors** (like crawling issues), monitor your site's **Core Web Vitals**, and find **Search Queries** where you currently rank between positions 11 and 20—these are prime opportunities for quick ranking gains with minor content updates.</p>
+</details>
 
 Now stop reading and start doing. Your future self (and future traffic) will thank you. 🚀

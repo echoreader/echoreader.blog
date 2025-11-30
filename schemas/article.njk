@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "description": "{{ description or excerpt }}",
+  "datePublished": "{{ date | date('YYYY-MM-DD') }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ author or 'Echo Reader' }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "EchoReader",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/logo.png' | toAbsoluteUrl }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | toAbsoluteUrl }}"
+  }
+}
+</script>

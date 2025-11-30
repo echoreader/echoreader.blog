@@ -1,20 +1,61 @@
 module.exports = function(eleventyConfig) {
   const site = require("./src/_data/site.js");
 
-  //eleventyConfig.addFilter('toAbsoluteUrl', function(url) {
-  //  try {
-  //    return new URL(url, site.url).href;
-  //  } catch (err) {
-  //    console.error("toAbsoluteUrl error:", err);
-  //    return url;
-  //  }
-  //});
-
   eleventyConfig.addFilter("toAbsoluteUrl", function(url) {
     const safeUrl = url.startsWith("/") ? url : "/" + url;
     return "https://echoreader.blog" + safeUrl;
   });
 
+  // Filter untuk ekstrak FAQ dari konten HTML
+  eleventyConfig.addFilter("extractFAQSchema", function(content) {
+    if (!content) return '';
+    
+    const questions = [];
+    
+    // Regex untuk menangkap <details> blocks
+    const detailsRegex = /<details>\s*<summary>(.*?)<\/summary>\s*(.*?)<\/details>/gs;
+    let match;
+    
+    while ((match = detailsRegex.exec(content)) !== null) {
+      const question = match[1]
+        .replace(/<[^>]+>/g, '') // hapus HTML tags
+        .replace(/&quot;/g, '"')  // decode HTML entities
+        .replace(/&amp;/g, '&')
+        .replace(/&#39;/g, "'")
+        .replace(/\*\*/g, '')     // hapus markdown bold
+        .trim();
+      
+      const answer = match[2]
+        .replace(/<[^>]+>/g, '')  // hapus HTML tags
+        .replace(/&quot;/g, '"')
+        .replace(/&amp;/g, '&')
+        .replace(/&#39;/g, "'")
+        .replace(/\*\*/g, '')
+        .trim();
+      
+      if (question && answer) {
+        questions.push({ question, answer });
+      }
+    }
+    
+    if (questions.length === 0) return '';
+    
+    // Generate JSON-LD
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": questions.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    };
+    
+    return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
+  });
 
   eleventyConfig.addShortcode("link", function (path, text, target = "_self", rel = "") {
     try {

@@ -98,64 +98,31 @@ With most browsing done on phones, **mobile friendliness** is non-negotiable.
 *   **User Experience is SEO:** **Page speed**, **mobile friendliness**, and **readability** are not just "nice-to-haves"; they are core ranking factors.
 *   **Be Systematic:** Use this **basic on-page SEO checklist** for every piece of content you create to ensure consistency and quality.
 
-<section itemScope itemType="https://schema.org/FAQPage">
-  <h2>Frequently Asked Questions (FAQ) on Basic On-Page SEO</h2>
+## Frequently Asked Questions (FAQ) on Basic On-Page SEO
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">1. How many times should I include my keyword on a page?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          There's no magic number. Focus on using it naturally in the key places: 
-          the **title tag**, **meta description**, **URL**, **H1**, first paragraph, 
-          and a few times throughout the content. Forcing it (**keyword stuffing**) 
-          will hurt you. Write for people, and the keywords will fall into place.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>What is the most crucial element on the On-Page SEO Checklist?</summary>
+  <p>The most crucial element is the **Title Tag**. It is the main heading that appears on the search engine results page (SERP). It must include your primary target keyword and be compelling enough to encourage a user to click on your link over the competition.</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">2. What's more important, the title tag or the H1?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          The **title tag** is more critical for SEO as it's what appears in search 
-          results and is a primary ranking signal. However, the **H1** is vital for 
-          **user experience** on the page. Often, they can be identical or very similar. 
-          Always optimize both.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>How important are Heading Tags (H1, H2, H3) for On-Page SEO?</summary>
+  <p>They are highly important. Heading tags provide structure and hierarchy to your content, making it easier for both search engines (to understand the topic flow) and users (to read and scan the page). Ensure you use only one **H1 tag** per page.</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">3. I'm using a page builder like WordPress or Squarespace. Can I still do this?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          **Absolutely!** Every major website platform and page builder allows you to 
-          edit these core elements. You might need to look for the "SEO Settings" box 
-          on the page or install a simple SEO plugin (like Yoast or RankMath for 
-          WordPress) to make it even easier.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>Should I stuff my keywords into the content to improve ranking?</summary>
+  <p>Absolutely not. **Keyword stuffing** is an outdated and penalized practice. The goal is to use your keywords naturally, focusing instead on user experience and creating high-quality, comprehensive content that answers the user's intent.</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">4. How long does it take for on-page SEO changes to work?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          You can see results in as little as a few days for smaller sites, but it 
-          often takes a few weeks for Google to recrawl your page and reassess it. 
-          The key is consistency—apply this **basic on-page SEO checklist** to all 
-          your important pages, and the cumulative effect will be significant over time.
-        </p>
-      </div>
-    </div>
-  </details>
-</section>
+<details>
+  <summary>What is the purpose of the Meta Description on the checklist?</summary>
+  <p>The **Meta Description** does not directly affect ranking, but it is critical for improving your **Click-Through Rate (CTR)**. It acts as an advertisement for your page on the SERP, encouraging users to choose your link. It should summarize the page and contain a call-to-action.</p>
+</details>
+
+<details>
+  <summary>Why is image optimization included in On-Page SEO?</summary>
+  <p>Images need to be optimized for two main reasons: 1) **Speed**, by compressing the file size to prevent slow load times (a major ranking factor), and 2) **Accessibility/Searchability**, by using descriptive **Alt Text** that includes keywords.</p>
+</details>
 
 This checklist is your foundation. It’s the 20% of the work that delivers 80% of the results. Stop overcomplicating it. Pick one of your older blog posts that isn't performing, run it through this list, make the updates, and watch what happens. You've got this.

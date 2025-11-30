@@ -84,63 +84,31 @@ You can't manage what you don't measure. I rely on a core set of tools for every
 *   **Google Search Console is Your Best Friend:** This free tool provides invaluable data directly from Google on your performance, indexing, and technical issues.
 *   **Consistency Beats Intensity:** Regularly maintaining and updating your site based on this checklist is far more effective than doing one massive overhaul and forgetting about it.
 
-<section itemScope itemType="https://schema.org/FAQPage">
-  <h2>Frequently Asked Questions (FAQ) on SEO Strategy</h2>
+## Frequently Asked Questions (FAQ) on SEO Strategy
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">1. How long does it take to see results from SEO?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          This is the hardest question. Generally, you might see small movements 
-          in **3-6 months**, but significant, traffic-transforming results typically 
-          take **6-12 months of consistent effort**. Search engine optimization 
-          is inherently a long-term strategy, not a quick fix.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>What are the three main pillars covered by a comprehensive SEO Checklist?</summary>
+  <p>A comprehensive checklist typically covers three major pillars: 1) **Technical SEO** (site speed, indexing, crawlability, sitemaps), 2) **On-Page SEO** (content quality, keyword targeting, titles, headings), and 3) **Off-Page SEO** (backlinks, authority, and brand mentions).</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">2. What's the single most important item on this SEO checklist?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          If I had to pick one, it's **Keyword Research & Search Intent**. If you 
-          create the world's best-optimized content for a query nobody searches for, 
-          or for an intent you don't understand, it will not rank. Everything else 
-          builds on this foundation.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>Is it necessary to follow the checklist in a specific order?</summary>
+  <p>While some flexibility exists, it is highly recommended to prioritize **Technical SEO first**. If search engines cannot efficiently crawl and index your site (a technical issue), no amount of great content (On-Page SEO) will help you rank.</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">3. Is technical SEO more important than content?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          They are two sides of the same coin. The best content in the world won't be 
-          found if **technical issues** hide it from crawlers. A perfectly technical 
-          site with thin, useless content has no reason to rank. You need both working 
-          in harmony for successful ranking.
-        </p>
-      </div>
-    </div>
-  </details>
+<details>
+  <summary>How often should I review and apply the items on the SEO Checklist?</summary>
+  <p>You should apply the checklist items **immediately** to every new page or major site update. You should also conduct a full **Technical and Content audit** using the checklist at least **quarterly** (every three months) to ensure nothing has broken and to capture new ranking opportunities.</p>
+</details>
 
-  <details itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
-    <summary itemProp="name">4. How often should I run through this checklist?</summary>
-    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
-      <div itemProp="text">
-        <p>
-          Perform a full comprehensive audit using this **SEO checklist** at least 
-          **twice a year**. However, you should be monitoring your key metrics 
-          (traffic, rankings, **Core Web Vitals**) in **Google Search Console** and your analytics platform weekly.
-        </p>
-      </div>
-    </div>
-  </details>
-</section>
+<details>
+  <summary>What is the easiest item on the checklist that yields the quickest results?</summary>
+  <p>The easiest high-impact item is often **optimizing existing content's internal links**. By linking relevant, high-authority pages to new or underperforming pages, you quickly pass "link juice" and improve their discoverability and ranking potential.</p>
+</details>
+
+<details>
+  <summary>Does this checklist include aspects of local SEO?</summary>
+  <p>A comprehensive SEO checklist should include local components, such as verifying your **Google My Business (GMB)** listing, ensuring **NAP (Name, Address, Phone)** consistency across the web, and optimizing your pages for localized keywords.</p>
+</details>
 
 This checklist is your blueprint. It demystifies the process and breaks down a complex discipline into manageable, actionable steps. Start with the foundation, build out your pages with purpose, and consistently work to build your site's authority. The results won't be instant, but I promise you, they will be worth it.

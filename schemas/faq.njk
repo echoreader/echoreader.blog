@@ -1,0 +1,4 @@
+{%- set faqSchema = content | extractFAQSchema -%}
+{%- if faqSchema -%}
+{{ faqSchema | safe }}
+{%- endif -%}

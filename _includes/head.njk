@@ -45,7 +45,9 @@
   {% endif %}
 
   {% if page.inputPath | contains("/posts/") %}
-    {% include "schemas/post.njk" %}
+    {% include "schemas/breadcrumb.njk" %}
+    {% include "schemas/article.njk" %}
+    {% include "schemas/faq.njk" %}
   {% endif %}
 
   {% if page.url == "/about/" %}
