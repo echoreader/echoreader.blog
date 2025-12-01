@@ -18,11 +18,39 @@ export default defineConfig({
   ],
   preflights: [
     {
-      getCSS: () => `
-        body {
+      getCSS: () => `body {
           font-family: 'Open Sans', system-ui, sans-serif;
         }
-      `,
+      
+        table {
+          border-collapse: collapse;
+          display: block;              /* ubah jadi block element */
+          overflow-x: auto;            /* aktifkan scroll horizontal */
+          white-space: nowrap;         /* cegah isi kolom pecah ke bawah */
+          -webkit-overflow-scrolling: touch;
+        }
+
+        /* Aturan untuk header dan cell */
+        table th,
+        table td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: left;
+          vertical-align: top;
+        }
+
+        table th {
+          background-color: #f2f2f2;
+          font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+          background-color: #fafafa;
+        }
+
+        blockquote { border-left: 4px solid #828282; padding-left: 12px; font-style: italic; }
+        details { margin-bottom: 1rem; }
+        summary { cursor: pointer; font-weight: bold; }`,
     },
   ],
   safelist: [
