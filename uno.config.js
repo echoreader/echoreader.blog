@@ -14,7 +14,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetTypography(),
+    //presetTypography(),
   ],
   preflights: [
     {
