@@ -6,27 +6,24 @@ module.exports = function(eleventyConfig) {
     return "https://echoreader.blog" + safeUrl;
   });
 
-  // Filter untuk ekstrak FAQ dari konten HTML
   eleventyConfig.addFilter("extractFAQSchema", function(content) {
     if (!content) return '';
     
     const questions = [];
-    
-    // Regex untuk menangkap <details> blocks
     const detailsRegex = /<details>\s*<summary>(.*?)<\/summary>\s*(.*?)<\/details>/gs;
     let match;
     
     while ((match = detailsRegex.exec(content)) !== null) {
       const question = match[1]
-        .replace(/<[^>]+>/g, '') // hapus HTML tags
-        .replace(/&quot;/g, '"')  // decode HTML entities
+        .replace(/<[^>]+>/g, '')
+        .replace(/&quot;/g, '"')
         .replace(/&amp;/g, '&')
         .replace(/&#39;/g, "'")
-        .replace(/\*\*/g, '')     // hapus markdown bold
+        .replace(/\*\*/g, '')
         .trim();
       
       const answer = match[2]
-        .replace(/<[^>]+>/g, '')  // hapus HTML tags
+        .replace(/<[^>]+>/g, '')
         .replace(/&quot;/g, '"')
         .replace(/&amp;/g, '&')
         .replace(/&#39;/g, "'")
@@ -40,7 +37,6 @@ module.exports = function(eleventyConfig) {
     
     if (questions.length === 0) return '';
     
-    // Generate JSON-LD
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -78,12 +74,10 @@ module.exports = function(eleventyConfig) {
 
   // 🔧 Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
-  // Ambil semua posts, filter yang punya date, lalu urutkan descending
   const posts = collectionApi.getFilteredByGlob("src/posts/*.md")
     .filter(post => post.date)
     .sort((a, b) => b.date - a.date);
 
-  // Tambahkan prev/next ke setiap post
     return posts.map((post, index) => {
       post.data.prev = index < posts.length - 1 ? posts[index + 1] : null; // karena descending, prev = lebih baru
       post.data.next = index > 0 ? posts[index - 1] : null; // next = lebih lama

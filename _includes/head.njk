@@ -1,55 +1,54 @@
 <!-- 1. Charset & viewport -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 2. SEO meta -->
-  <meta name="robots" content="index, follow">
-  <title>{{ title or this.ctx.title or "EchoReader – Blog Modular SEO" }}</title>
-  <meta name="description" content="{{ description or excerpt or this.ctx.excerpt or 'EchoReader is a modular blog covering SEO strategies, technical audits, and static architecture.' }}" />
-  <link rel="canonical" href="{{ page.url | toAbsoluteUrl }}" />
+<!-- 2. SEO meta -->
+<meta name="robots" content="index, follow">
+<title>{{ title or this.ctx.title or "EchoReader – Blog Modular SEO" }}</title>
+<meta name="description" content="{{ description or excerpt or this.ctx.excerpt or 'EchoReader is a modular blog covering SEO strategies, technical audits, and static architecture.' }}" />
+<link rel="canonical" href="{{ page.url | toAbsoluteUrl }}" />
 
-  <!-- 3. Google AdSense Script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-6771362188294710"
-    crossorigin="anonymous"></script>
+<!-- 3. Google AdSense Script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-6771362188294710" crossorigin="anonymous"></script>
 
-  <!-- 4. Stylesheet -->
-  <!--link rel="stylesheet" href="/assets/style.css" /-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="/assets/uno.css" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any"/>
-  
+<!-- 4. Stylesheet -->
+<!--link rel="stylesheet" href="/assets/style.css" /-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="/assets/uno.css" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any"/>
 
-  <!-- 5. Cloudflare beacon script -->
-  <script>
-    if (window.location.search.includes("no-track")) {
-      localStorage.setItem("skipAnalytics", "true");
-    }
-    if (localStorage.getItem("skipAnalytics") !== "true") {
-      const cfScript = document.createElement("script");
-      cfScript.defer = true;
-      cfScript.src = "https://static.cloudflareinsights.com/beacon.min.js";
-      cfScript.setAttribute("data-cf-beacon", '{"token": "6923e7a9ca0b46b2b6f57fabffaf6e1b"}');
-      document.head.appendChild(cfScript);
-    }
-  </script>
+<!-- 5. Cloudflare beacon script -->
+<script>
+  if (window.location.search.includes("no-track")) {
+    localStorage.setItem("skipAnalytics", "true");
+  }
 
-  <!-- 6. Schema includes -->
-  {% if page.url == "/" %}
-    {% include "schemas/organization.njk" %}
-  {% endif %}
+  if (localStorage.getItem("skipAnalytics") !== "true") {
+    const cfScript = document.createElement("script");
+    cfScript.defer = true;
+    cfScript.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    cfScript.setAttribute("data-cf-beacon", '{"token": "6923e7a9ca0b46b2b6f57fabffaf6e1b"}');
+    document.head.appendChild(cfScript);
+  }
+</script>
 
-  {% if page.url == "/blog/" %}
-    {% include "schemas/blog.njk" %}
-  {% endif %}
+<!-- 6. Schema includes -->
+{% if page.url == "/" %}
+  {% include "schemas/organization.njk" %}
+{% endif %}
 
-  {% if page.inputPath | contains("/posts/") %}
-    {% include "schemas/breadcrumb.njk" %}
-    {% include "schemas/article.njk" %}
-    {% include "schemas/faq.njk" %}
-  {% endif %}
+{% if page.url == "/blog/" %}
+  {% include "schemas/blog.njk" %}
+{% endif %}
 
-  {% if page.url == "/about/" %}
-    {% include "schemas/profile.njk" %}
-  {% endif %}
+{% if page.inputPath | contains("/posts/") %}
+  {% include "schemas/breadcrumb.njk" %}
+  {% include "schemas/article.njk" %}
+  {% include "schemas/faq.njk" %}
+{% endif %}
+
+{% if page.url == "/about/" %}
+  {% include "schemas/profile.njk" %}
+{% endif %}

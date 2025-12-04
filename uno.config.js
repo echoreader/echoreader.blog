@@ -7,14 +7,12 @@ export default defineConfig({
         './src/**/*.{html,njk,md,liquid}',
         './_includes/*.{html,njk,md,liquid}',
       ],
-      // exclude node_modules biar lebih ringan
       exclude: ['node_modules', '.git'],
     },
   },
   presets: [
     presetUno(),
     presetAttributify(),
-    //presetTypography(),
   ],
   preflights: [
     {
@@ -24,13 +22,12 @@ export default defineConfig({
       
         table {
           border-collapse: collapse;
-          display: block;              /* ubah jadi block element */
-          overflow-x: auto;            /* aktifkan scroll horizontal */
-          white-space: nowrap;         /* cegah isi kolom pecah ke bawah */
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
           -webkit-overflow-scrolling: touch;
         }
 
-        /* Aturan untuk header dan cell */
         table th,
         table td {
           border: 1px solid #ccc;

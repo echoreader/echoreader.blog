@@ -27,16 +27,15 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("menu-toggle");        // tombol hamburger
-    const mobileMenu = document.getElementById("mobile-menu");    // container menu mobile
-    const desktopNav = document.querySelector("nav.hidden.lg\\:flex"); // target nav desktop spesifik
+    const toggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const desktopNav = document.querySelector("nav.hidden.lg\\:flex");
 
-    const mq = window.matchMedia("(max-width: 1023px)"); // Tailwind lg breakpoint
+    const mq = window.matchMedia("(max-width: 1023px)");
     let isBound = false; // flag untuk mencegah double binding
 
     function bindMobileToggle() {
       if (!toggle || !mobileMenu || isBound) return;
-      // Pastikan menu mobile mulai dalam keadaan hidden (menghindari bentrok)
       mobileMenu.classList.add("hidden");
 
       toggle.addEventListener("click", () => {
@@ -48,53 +47,30 @@
 
     function unbindMobileToggle() {
       if (!toggle || !isBound) return;
-      // Reset listener dengan clone agar bersih
       const clone = toggle.cloneNode(true);
       toggle.parentNode.replaceChild(clone, toggle);
-      // Update referensi toggle ke clone baru
       const newToggle = document.getElementById("menu-toggle");
-      // Set flag ulang
       isBound = false;
     }
 
     function handleViewport(e) {
       if (e.matches) {
-        // MOBILE: aktifkan toggle; hapus link di desktop nav
         bindMobileToggle();
+
         if (desktopNav) {
           desktopNav.querySelectorAll("a").forEach(link => link.remove());
         }
       } else {
-        // DESKTOP: matikan toggle; pastikan mobile menu tertutup; hapus link di mobile nav
         unbindMobileToggle();
+
         if (mobileMenu) {
-          mobileMenu.classList.add("hidden");            // tutup menu mobile kalau sempat terbuka
+          mobileMenu.classList.add("hidden");
           mobileMenu.querySelectorAll("a").forEach(link => link.remove());
         }
       }
     }
 
-    // Run saat load dan saat resize
     handleViewport(mq);
     mq.addEventListener("change", handleViewport);
   });
 </script>
-
-{# Ini komentar di Nunjucks
-<header>
-  <div class="header-inner container">
-    <div class="branding">
-      <a href="{{ '/' | toAbsoluteUrl }}">Echo Reader</a>
-    </div>
-
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    <nav class="main-menu" id="mainMenu">
-      <ul>
-        <li><a href="{{ '/blog/' | toAbsoluteUrl }}">Blog</a></li>
-        <li><a href="{{ '/about/' | toAbsoluteUrl }}">About</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-#}
