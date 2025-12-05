@@ -16,7 +16,12 @@ export default defineConfig({
   ],
   preflights: [
     {
-      getCSS: () => `body {
+      getCSS: () => `
+        html {
+          overflow-y: scroll;
+        }
+
+        body {
           font-family: 'Open Sans', system-ui, sans-serif;
         }
       
