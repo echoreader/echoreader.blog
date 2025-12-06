@@ -5,11 +5,11 @@ layout: post.njk
 permalink: "/how-does-voice-search-work/"
 excerpt: Learn the mechanics behind voice search and its growing influence on digital marketing. Unlock strategies to optimize your website for voice queries effectively.
 author: "Echo Reader"
-category: "seo"
+category: "search-engine-optimization"
 tags:
-  - checklist
-  - on-page
-  - optimization
+  - voice-search
+  - strategies
+  - marketing
 ---
 
 ## Introduction: Why **Voice Search** is More Than Just Talking

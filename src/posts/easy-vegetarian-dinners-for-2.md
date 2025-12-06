@@ -3,14 +3,13 @@ title: Easy Vegetarian Dinners for 2
 date: 2025-10-18
 layout: post.njk
 permalink: "/easy-vegetarian-dinners-for-2/"
-excerpt: Ever find yourself staring into the fridge, just you and your partner, wondering what on earth to make that’s fast, satisfying, and doesn’t leave you with a
+excerpt: Enjoy effortless vegetarian dinners for two! Explore our collection of quick and flavorful recipes that make cooking fun and stress-free.
 author: "Echo Reader"
-category: "food"
+category: "food-drink"
 tags:
-  - vegetarian
+  - recipe
   - dinner
   - cooking
-  - healthy-eating
 ---
 
 Easy Vegetarian Dinners for 2

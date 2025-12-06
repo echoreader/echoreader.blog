@@ -5,9 +5,9 @@ layout: post.njk
 permalink: "/how-to-increase-google-ranking-for-free/"
 excerpt: Unlock the secrets to improving your Google ranking for free! Explore simple, actionable tips that can help your site stand out in search results.
 author: "Echo Reader"
-category: "seo"
+category: "search-engine-optimization"
 tags:
-  - free-seo
+  - search-results
   - google
   - rangking
 ---

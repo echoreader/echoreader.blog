@@ -5,11 +5,11 @@ layout: post.njk
 permalink: "/search-engine-optimization-checklist/"
 excerpt: Optimize your website with our comprehensive SEO checklist. Boost rankings, enhance visibility, and drive traffic with proven strategies and tips.
 author: "Echo Reader"
-category: "seo"
+category: "search-engine-optimization"
 tags:
-  - checklist
-  - guide
-  - optimization
+  - seo-checklist
+  - rankings
+  - strategies
 ---
 
 I’ll never forget the first site I ever optimized. I spent weeks writing what I thought was brilliant content, only to watch it languish on page 12 of Google. I was missing the fundamentals—the unglamorous, technical, and strategic groundwork that makes search engines take notice. It was a humbling lesson that **search engine optimization** isn't a single magic trick; it's a series of deliberate, connected actions. This **SEO checklist** is the one I wish I had back then. It's a compilation of the non-negotiable steps I use for every client and project today to build a foundation that not only ranks but also earns trust and delivers results.

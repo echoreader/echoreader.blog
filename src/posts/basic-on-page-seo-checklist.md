@@ -3,12 +3,12 @@ title: Basic on Page SEO Checklist
 date: 2025-10-23
 layout: post.njk
 permalink: "/basic-on-page-seo-checklist/"
-excerpt: Elevate your site's SEO game! Explore our basic on-page SEO checklist to ensure your content is optimized for search engines and user engagement.
+excerpt: Elevate your site SEO game! Explore our basic on-page SEO checklist to ensure your content is optimized for search engines and user engagement.
 author: "Echo Reader"
-category: "seo"
+category: "search-engine-optimization"
 tags:
-  - checklist
-  - on-page
+  - seo-checklist
+  - search-engines
   - optimization
 ---
 

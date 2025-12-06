@@ -5,11 +5,10 @@ layout: post.njk
 permalink: "/link-building-outreach-email-example/"
 excerpt: Master the art of link building with our outreach email examples. Explore proven strategies to connect with influencers and improve your website authority.
 author: "Echo Reader"
-category: "seo"
+category: "search-engine-optimization"
 tags:
-  - checklist
-  - on-page
-  - optimization
+  - strategies
+  - website-authority
 ---
 
 ## Why Generic **SEO Outreach** Fails in the Modern Era

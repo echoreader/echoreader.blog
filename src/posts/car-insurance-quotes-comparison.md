@@ -8,9 +8,6 @@ author: "Echo Reader"
 category: "insurance"
 tags:
   - car-insurance
-  - quotes
-  - comparison
-  - finance
 ---
 
 The Complete Guide to Car Insurance Quotes Comparison: What I Wish Someone Had Told Me Sooner
