@@ -85,6 +85,29 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  
+
+
+//cuma nambah iniiiiiiiiiiiiiiiiiiiiiiiiii dan masih error Cannot GET /category/search-engine-optimization/
+  eleventyConfig.addCollection("categories", function (collectionApi) {
+  const posts = collectionApi.getFilteredByGlob("src/posts/*.md");
+
+
+  const categories = new Set();
+
+  posts.forEach(post => {
+    const cat = post.data.category;
+    if (Array.isArray(cat)) categories.add(cat[0]);
+    else if (typeof cat === "string") categories.add(cat);
+  });
+
+  return [...categories];
+});
+
+
+
+
+
   // 🔧 Filters
   eleventyConfig.addFilter("date", function(value) {
     const date = new Date(value);

@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/category/{{ category }}/"
+layout: layout.njk
+---
+
+<h1 class="text-2xl font-bold mb-6">Category: {{ category }}</h1>
+
+<div class="grid gap-2">
+  {% for post in collections.posts %}
+    {% set cat = post.data.category %}
+    {% if (cat == category) or (cat is iterable and cat[0] == category) %}
+      <div class="bg-white text-black border-2 border-solid border-black rounded-lg p-4 shadow-sm">
+        <h2 class="text-xl font-bold mb-1">
+          <a href="{{ post.url | toAbsoluteUrl }}" class="text-black no-underline hover:text-blue-600">
+            {{ post.data.title }}
+          </a>
+        </h2>
+
+        <small class="text-sm text-gray-500 block mb-1">
+          {{ post.date | date }}
+        </small>
+
+        <p class="text-base text-gray-700">
+          {{ post.data.excerpt }}
+        </p>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

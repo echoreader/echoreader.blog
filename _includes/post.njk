@@ -5,11 +5,19 @@ layout: layout.njk
 {% block content %}
 
 <!-- 🔧 Breadcrumb -->
+<!-- 🔧 Breadcrumb -->
 <nav class="breadcrumb text-sm mb-4">
   <a href="{{ '/' | toAbsoluteUrl }}" class="text-blue-600 hover:underline-none">Home</a>
-  › <span class="text-gray-600">{{ category }}</span>
+  ›
+  <a
+    href="/category/{{ category }}/"
+    class="text-blue-600 hover:underline-none"
+  >
+    {{ category }}
+  </a>
   › <span class="text-gray-900">{{ title }}</span>
 </nav>
+
 
 <article class="prose lg:prose-xl">
   <!-- Title -->
