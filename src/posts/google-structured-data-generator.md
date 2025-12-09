@@ -135,6 +135,8 @@ I prioritize these for 90% of clients:
 </script>
 ```
 
+> Want to improve your visibility in voice search? Check out [How Does Voice Search Work?](https://echoreader.blog/how-does-voice-search-work/) to understand how search engines interpret spoken queries.
+
 ## Testing and Monitoring Your Markup
 
 I never launch without triple-checking:

@@ -88,6 +88,8 @@ Some nights call for something a little more special. This is where you can have
 
 I love making a **wild mushroom risotto**. It feels fancy and indulgent, but it’s really just about stirring and being patient. Light some candles, put on some music, and turn dinner into an event. It’s these little rituals that make cooking for two so rewarding.
 
+> Want to create recipes that stay relevant year‑round? Explore [Examples of Evergreen Content](https://echoreader.blog/examples-of-evergreen-content/) to understand what makes content timeless.
+
 High-Protein Vegetarian Meals Without Tofu
 ------------------------------------------
 

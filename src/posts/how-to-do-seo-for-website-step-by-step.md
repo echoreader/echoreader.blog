@@ -70,6 +70,8 @@ Content is the fuel for your SEO engine. My approach to **content creation strat
 *   **Focus on E-E-A-T:** Demonstrate your **Experience, Expertise, Authoritativeness, and Trustworthiness** within your content. Cite sources, show data, and make it clear why you are a credible voice on the topic.
 *   **Create a Content Calendar:** SEO is a long game. Plan your content publication schedule to ensure consistent effort.
 
+> Want a simpler breakdown of on‑page tasks? Read the [Basic On‑Page SEO Checklist](https://echoreader.blog/basic-on-page-seo-checklist/) for quick, actionable improvements.
+
 ## Step 5: Building Authority with Off-Page SEO and Link Building
 
 This is about earning your reputation across the web. **Off-page SEO**, primarily through **link building**, is how you tell Google that other reputable sites vouch for your content.

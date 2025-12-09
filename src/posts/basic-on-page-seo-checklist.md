@@ -72,6 +72,8 @@ Images slow down pages if not handled correctly, hurting **page speed**.
 *   **Link to Relevant Pages:** Link to other related articles or important pages (like your "Start Here" or "Services" page) using descriptive anchor text.
 *   **Help User Navigation:** Think, "What other page would my reader find helpful right now?" and link to it.
 
+> Want to enhance your on‑page signals further? Check out [Google Structured Data Generator](https://echoreader.blog/google-structured-data-generator/) to help search engines better interpret your pages.
+
 ### 3. Ensure Mobile-Friendliness and Readability
 With most browsing done on phones, **mobile friendliness** is non-negotiable.
 *   **Responsive Design:** Your site should automatically adjust to fit any screen size.

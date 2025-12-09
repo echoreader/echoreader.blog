@@ -71,6 +71,8 @@ You can't just *say* you know SEO; you have to *show* it. Your **portfolio** is 
 *   **Show "Before" and "After":** Use screenshots from **Google Analytics** and **Google Search Console** to show how your work increased traffic, improved rankings, or fixed technical issues.
 *   **Tell the Story:** Explain your process. What was your **keyword research** strategy? What **on-page SEO** changes did you make? How did you approach **link building**?
 
+> Starting your SEO journey? Read [SEO for Beginners: A Practical 2025 Guide](https://echoreader.blog/seo-for-beginners-a-practical-2025-guide/) for essential skills every optimizer should master.
+
 ### Step 4: Choose Your Entry Point and Start Applying
 The **SEO career path** has several common starting points. Don't feel you need to be an expert in everything.
 

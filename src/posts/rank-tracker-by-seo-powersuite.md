@@ -114,6 +114,8 @@ I send a 3-page report every Friday clients renew without me asking.
 
 I upgraded to Pro in 2016 best $12/month I spend.
 
+> Need more tools to support your SEO workflow? Explore [Google Keyword Research Tool (Free)](https://echoreader.blog/google-keyword-research-tool-free/) for powerful insights without the cost.
+
 ## Integrating Rank Tracker With My Workflow
 
 - **Google Search Console**: Import impressions → cross-check accuracy.  

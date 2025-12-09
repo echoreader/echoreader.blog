@@ -155,6 +155,8 @@ A site audit reveals optimization opportunities and technical problems. I perfor
 
 The results guide my optimization priorities. I tackle high-impact issues first—those affecting multiple pages or causing significant user experience problems.
 
+> Ready for a deeper walkthrough? Check out [How to Do SEO for a Website Step by Step](https://echoreader.blog/how-to-do-seo-for-website-step-by-step/) for a more detailed process.
+
 ## Measuring Success: Analytics and Reporting
 
 I track specific metrics to understand whether my efforts are working. User experience (UX) metrics have become just as important as traditional SEO metrics. My dashboard includes:

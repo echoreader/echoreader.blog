@@ -104,6 +104,8 @@ Claim and optimize your **Google Business Profile** (100% free). I did this for 
 
 Result: Went from unranked to the local 3-pack in 9 weeks.
 
+> Ready to take your optimization further? Explore the [Search Engine Optimization Checklist](https://echoreader.blog/search-engine-optimization-checklist/) for a complete set of ranking essentials.
+
 ## Key Takeaways (What Actually Moved My Rankings)
 
 - **Google Search Console** is your new best friend — use it weekly  
