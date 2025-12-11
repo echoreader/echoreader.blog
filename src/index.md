@@ -9,6 +9,51 @@ permalink: "/"
 
 Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategies, technical audits, and creative experiments. Built for clarity, optimized for search.
 
+<!-- ✅ Category Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-12">
+
+  <!-- Insurance (aktif) -->
+  <div class="border border-solid rounded p-4 hover:bg-gray-50 transition">
+    <a href="{{ site_url }}/category/insurance/">
+      <h3 class="font-bold mb-1">Insurance</h3>
+    </a>
+    <p class="text-sm">
+      Insights on insurance fundamentals, risk management, and practical coverage guidance.
+    </p>
+  </div>
+
+  <!-- SEO (aktif) -->
+  <div class="border rounded border-solid p-4 hover:bg-gray-50 transition">
+    <a href="{{ site_url }}/category/search-engine-optimization/">
+      <h3 class="font-bold mb-1">Search Engine Optimization</h3>
+    </a>
+    <p class="text-sm">
+      Strategies, experiments, and frameworks to improve rankings and organic visibility.
+    </p>
+  </div>
+
+  <!-- Digital Marketing (dimatikan) -->
+  <div class="border rounded border-solid  p-4 hover:bg-gray-50 transition">
+    <a href="#">
+      <h3 class="font-bold mb-1">Digital Marketing</h3>
+    </a>
+    <p class="text-sm">
+      Guides on content, analytics, funnels, and modern marketing execution.
+    </p>
+  </div>
+
+</div>
+
+<!-- ✅ Centered Button -->
+<div class="flex justify-center mb-16">
+  <a 
+    href="/blog/" 
+    class="px-6 py-3 bg-black text-white font-semibold rounded hover:bg-gray-800 transition"
+  >
+    Explore All Posts
+  </a>
+</div>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (location.hostname === "echoreader.pages.dev") {

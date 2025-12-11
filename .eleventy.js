@@ -1,9 +1,27 @@
 module.exports = function(eleventyConfig) {
   const site = require("./src/_data/site.js");
 
-  eleventyConfig.addFilter("toAbsoluteUrl", function(url) {
+  /*eleventyConfig.addFilter("toAbsoluteUrl", function(url) {
     const safeUrl = url.startsWith("/") ? url : "/" + url;
     return "https://echoreader.blog" + safeUrl;
+  });*/
+
+  eleventyConfig.addFilter("toAbsoluteUrl", function(path) {
+    // ✅ Jika path sudah absolute, kembalikan apa adanya
+    if (path.startsWith("http://") || path.startsWith("https://")) {
+      return path;
+    }
+
+    // ✅ Jika sedang local (localhost / 127.0.0.1), jangan absolute
+    if (process.env.NODE_ENV !== "production") {
+      return path;
+    }
+
+    try {
+      return new URL(path, site.url).href;
+    } catch {
+      return path;
+    }
   });
 
   eleventyConfig.addFilter("extractFAQSchema", function(content) {
