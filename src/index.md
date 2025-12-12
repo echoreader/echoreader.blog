@@ -14,7 +14,7 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 
   <!-- Insurance (aktif) -->
   <div class="border border-solid rounded p-4 hover:bg-gray-50 transition">
-    <a href="{{ site_url }}/category/insurance/">
+    <a href="{{ '/category/insurance/' | toAbsoluteUrl }}">
       <h3 class="font-bold mb-1">Insurance</h3>
     </a>
     <p class="text-sm">
@@ -24,7 +24,7 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 
   <!-- SEO (aktif) -->
   <div class="border rounded border-solid p-4 hover:bg-gray-50 transition">
-    <a href="{{ site_url }}/category/search-engine-optimization/">
+    <a href="{{ '/category/search-engine-optimization/' | toAbsoluteUrl }}">
       <h3 class="font-bold mb-1">Search Engine Optimization</h3>
     </a>
     <p class="text-sm">
