@@ -34,9 +34,7 @@ Welcome to Echo Reader — an anonymous blog dedicated to scalable SEO strategie
 
   <!-- Digital Marketing (dimatikan) -->
   <div class="border rounded border-solid  p-4 hover:bg-gray-50 transition">
-    <a href="#">
-      <h3 class="font-bold mb-1">Digital Marketing</h3>
-    </a>
+    <h3 class="font-bold mb-1">Digital Marketing</h3>
     <p class="text-sm">
       Guides on content, analytics, funnels, and modern marketing execution.
     </p>
