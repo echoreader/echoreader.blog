@@ -11,6 +11,13 @@
 
 <!-- 3. Google AdSense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-6771362188294710" crossorigin="anonymous"></script>
+<!-- Monetag service worker register --> 
+<script defer>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
+
 
 <!-- 4. Stylesheet -->
 <!--link rel="stylesheet" href="/assets/style.css" /-->
