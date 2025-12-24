@@ -1,5 +1,5 @@
 ---
-title: seo-for-beginners-a-practical-2025-guide
+title: SEO for Beginners a Practical 2025 Guide
 date: 2025-10-29
 layout: post.njk
 permalink: "/seo-for-beginners-a-practical-2025-guide/"
